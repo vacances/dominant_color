@@ -8,7 +8,21 @@ Libraries used:
 - Axes3D
 - Selenium (webdriver)
 - Sklean (Kmeans)
+- FPDF (pdf)
 Steps: Screen capture -> Pixel array -> 3D Graph -> Clustering colors -> Printing out .pdf
-## Example: Google.com
+## Example:
+Screen capture from the site using Selenium.
 ![alt text](test.png)
+Turning array into 3D graph to clarify. Dominant n-colors are marked.
+![alt text](punkty.png)
+Program saves those files along with percentage.
+```
+Colors.txt
+#ef6f2a 0.15%
+#717e7b 0.36%
+#6099f4 2.91%
+#f1f1f1 11.22%
+#fefefe 85.35%
+```
+Then using FPDF we are turning data into a self-made report.
 ![alt text](raport.PNG)
